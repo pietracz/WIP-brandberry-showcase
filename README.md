@@ -1,8 +1,10 @@
 # Brandberry Showcase
 
-Brandberry ist ein Webdesign Studio, welches gebrauch vom "Productized Service" macht - eine Abomodel für eine Dienstleistung.
+## Description
 
-## Einleitung
+Brandberry bietet Unternehmen maßgeschneiderte Webdesign-Lösungen. Wir begleiten Sie von der ersten Idee bis zur fertigen Website und sorgen für ein professionelles Ergebnis. Unser agiler Ansatz und ein transparenter Projektverlauf garantieren eine effiziente Zusammenarbeit.
+
+## Explanation
 
 Die Website ist ein Multipager, dessen Design und Planung in Figma und Miro erfolgt ist. Auf Code-Ebene haben wir uns im Frontend für Next.js mit TypeScript und Styled Components entschieden, im Backend für Node.js und MySQL.
 
