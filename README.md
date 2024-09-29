@@ -20,7 +20,7 @@ Darum setzen wir hier auf die Modularisierung, trennen das Frontend vom Backend,
 
 ## Potential Server Structure
 
-<img src="server-structure.png">
+<img src="./assets/server-structure.png">
 
 ## Table of contents
 
