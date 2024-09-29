@@ -18,6 +18,10 @@ Im Backend verfolgen wir einen ähnlichen Ansatz. Next.js macht es grundsätzlic
 
 Darum setzen wir hier auf die Modularisierung, trennen das Frontend vom Backend, wodurch die REST-API über eine Node.js Instanz stattfindet und Anfragen von der Next.js App an die MySQL-Datenbank weiterleitet und verarbeitet.
 
+## Potential Server Structure
+
+<img src="server-structure.png">
+
 ## Table of contents
 
 [Homepage](https://github.com/pietracz/brandberry-showcase/tree/main/Homepage)<br>
