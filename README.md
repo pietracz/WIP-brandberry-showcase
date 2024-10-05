@@ -1,10 +1,23 @@
 # Brandberry Showcase
 
-## Description
+[Brandberry](https://brandberry-frontend.vercel.app/) ist ein fiktives Startup, welches Unternehmen maßgeschneiderte Webdesign-Lösungen bietet.
+Clienten werden ab der ersten Idee bis zur fertigen Website begleitet. Der Workflow beinhaltet einen agilen Ansatz und einen transparenten Projektverlauf, welcher eine effiziente Zusammenarbeit garantiert.
+Darüber hinaus ist der Workflow so konzipiert, dass das erste Ergebnis - abhängig vom Umfang der Anfrage - nach 48 Stunden ausgeliefert wird.
 
-[Brandberry](https://brandberry-frontend.vercel.app/) bietet Unternehmen maßgeschneiderte Webdesign-Lösungen. Wir begleiten Sie von der ersten Idee bis zur fertigen Website und sorgen für ein professionelles Ergebnis. Unser agiler Ansatz und ein transparenter Projektverlauf garantieren eine effiziente Zusammenarbeit.
+Diese Website und künftige Anfragen werden unter Verwendung folgender Technologien erstellt:
 
-## Explanation
+Frontend:
+
+- React(Next.js+TypeScript)
+- Styled Components
+- Lenis
+
+Backend:
+
+- Node.js(Express, mysql2)
+- MySQL
+
+## Projekt-Erläuterung
 
 Die Website ist ein Multipager, dessen Design und Planung in Figma und Miro erfolgt ist. Auf Code-Ebene haben wir uns im Frontend für Next.js mit TypeScript und Styled Components entschieden, im Backend für Node.js und MySQL.
 
@@ -18,13 +31,6 @@ Im Backend verfolgen wir einen ähnlichen Ansatz. Next.js macht es grundsätzlic
 
 Darum setzen wir hier auf die Modularisierung, trennen das Frontend vom Backend, wodurch die REST-API über eine Node.js Instanz stattfindet und Anfragen von der Next.js App an die MySQL-Datenbank weiterleitet und verarbeitet.
 
-## Potential Server Structure
+## Potenzielle Server-Struktur auf AWS
 
 <img src="./assets/server-structure.png">
-
-## Table of contents
-
-[Homepage](https://github.com/pietracz/brandberry-showcase/tree/main/Homepage)<br>
-[About](https://github.com/pietracz/brandberry-showcase/tree/main/About)<br>
-[Services](https://github.com/pietracz/brandberry-showcase/tree/main/Services)<br>
-[Contact](https://github.com/pietracz/brandberry-showcase/tree/main/Contact)<br>
