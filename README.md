@@ -31,6 +31,54 @@ Im Backend verfolgen wir einen ähnlichen Ansatz. Next.js macht es grundsätzlic
 
 Darum setzen wir hier auf die Modularisierung, trennen das Frontend vom Backend, wodurch die REST-API über eine Node.js Instanz stattfindet und Anfragen von der Next.js App an die MySQL-Datenbank weiterleitet und verarbeitet.
 
+## Ordnerstruktur
+
+Hierbei handelt es sich um eine vorläufige Ordnerstruktur.
+
+```
+Brandberry
++---.next
+\---node_modules
+|
++---public
+\---src
+|    \---app
+|        |   favicon.ico
+|        |   globals.css     /* Hier werden alle Variablen definiert, die später in den Komponenten verwendet werden */
+|        |   layout.tsx     /* Die layout.tsx und die page.tsx dienen lediglich einem redirect, um das Hauptverzeichnis sauber zu halten */
+|        |   page.tsx
+|        |
+|        +---about
+|        |   |   layout.tsx     /* Jede standard Route beinhaltet eine layout.tsx, um die parallelen Routen einzureihen*/
+|        |   |
+|        |   +---@hero
+|        |   |       page.tsx     /* Jede parallele Route beinhaltet eine page.tsx */
+|        |   |
+|        |   |
+|        |   +---@skills
+|        |   |
+|        |   +---@statement
+|        |   |
+|        |   \---@team
+|        |
+|        +---home
+|        |
+|        +---services
+|        |
+|        +---_components     /* Hier werden alle Komponenten definiert */
+|        |
+|        \---_lib     /* Dieser Ordner beinhaltet Skripte, um z.B. styled-components nutzbar zu machen */
+|
+|   .eslintrc.json
+|   .gitignore
+|   next-env.d.ts
+|   next.config.mjs
+|   package-lock.json
+|   package.json
+|   README.md
+|   tsconfig.json
+```
+
 ## Potenzielle Server-Struktur auf AWS
 
 <img src="./assets/server-structure.png">
