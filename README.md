@@ -1,6 +1,6 @@
 # Brandberry Showcase
 
-[Brandberry](https://brandberry-frontend.vercel.app/) ist ein fiktives Startup, welches Unternehmen maßgeschneiderte Webdesign-Lösungen bietet.
+Brandberry ist ein fiktives Startup, welches Unternehmen maßgeschneiderte Webdesign-Lösungen bietet.
 Clienten werden ab der ersten Idee bis zur fertigen Website begleitet. Der Workflow beinhaltet einen agilen Ansatz und einen transparenten Projektverlauf, welcher eine effiziente Zusammenarbeit garantiert.
 Darüber hinaus ist der Workflow so konzipiert, dass das erste Ergebnis - abhängig vom Umfang der Anfrage - nach 48 Stunden ausgeliefert wird.
 
