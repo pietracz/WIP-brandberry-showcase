@@ -21,7 +21,7 @@ Backend:
 
 Die Website ist ein Multipager, dessen Design und Planung in Figma und Miro erfolgt ist. Auf Code-Ebene haben wir uns im Frontend für Next.js mit TypeScript und Styled Components entschieden, im Backend für Node.js und MySQL.
 
-Das Design ist weiterhin ein fließender Prozess und spielt bei der Gestaltung des Produktes - der Dienstleistung - eine tragende Rolle. Bei dem Design achten wir darauf, dass wir uns so gut es geht an die 60-30-10-Verteilung halten, um eine angenehme Wahrnehmung zu gewährleisten.
+Das Design ist weiterhin ein fließender Prozess und spielt bei der Vermarktung des Produktes - der Dienstleistung - eine tragende Rolle. Es wird darauf geachtet, dass sich das Design an verschiedene Bildschirmgrößen anpasst und somit auf allen Geräten ein optimales Erlebnis bietet. Wir haben uns bei der Gestaltung besonders auf die Usability fokussiert, um eine optimale Nutzererfahrung zu gewährleisten. Das Design ist nicht nur schön, sondern auch funktional und unterstützt den Nutzer bei jeder Interaktion.
 
 Grundsätzlich ist das Styling über CSS und/oder Tailwind möglich, wir wollen aber dem Ansatz des "Atomic Design" und des "Clean Code" folgen, was natürlich React-Komponenten entgegenkommt.
 
@@ -30,6 +30,16 @@ Aus diesem Grund definieren wir lediglich Variablen über eine globals.css und e
 Im Backend verfolgen wir einen ähnlichen Ansatz. Next.js macht es grundsätzlich möglich, dass API-Calls über die Anwendung selber gemacht werden können, was aber die Skalierbarkeit erschwert.
 
 Darum setzen wir hier auf die Modularisierung, trennen das Frontend vom Backend, wodurch die REST-API über eine Node.js Instanz stattfindet und Anfragen von der Next.js App an die MySQL-Datenbank weiterleitet und verarbeitet.
+
+## Design
+
+Das Layout der Website ist bewusst minimalistisch gehalten, um die Aufmerksamkeit auf die Inhalte zu lenken. Durch eine klare Struktur und eine intuitive Navigation wird ein angenehmes Benutzererlebnis gewährleistet. Die Anordnung der Elemente ist sorgfältig durchdacht und sorgt für einen harmonischen Gesamteindruck.
+
+Die Wahl der Schriftarten unterstreicht den modernen Charakter der Website. Sora als Headline-Schriftart verleiht den Überschriften eine starke Präsenz und sorgt für eine klare Hierarchie. Figtree als Paragraphenschriftart sorgt für eine angenehme Lesbarkeit und einen fließenden Textfluss. Die Kombination dieser beiden Schriftarten schafft eine ausgewogene und ästhetisch ansprechende Typografie.
+
+Die Farbpalette der Website ist geprägt von den kräftigen Tönen Amouranth und Royal Purple. Diese Farben werden sowohl einzeln als als auch in harmonischen Verläufen eingesetzt, um eine dynamische und lebendige Atmosphäre zu schaffen. Durch die Anwendung der 60-30-10-Regel haben wir sichergestellt, dass die Farben in einem ausgewogenen Verhältnis zueinander stehen und die Inhalte optimal zur Geltung bringen. Die Verwendung dieser Farben im Dark Mode erzeugt einen modernen und stilvollen Kontrast.
+
+Der Dark Mode ist nicht nur ein aktueller Trend, sondern bietet auch praktische Vorteile. Er schont die Augen, reduziert die Belastung durch blaues Licht und schafft eine angenehme Atmosphäre, insbesondere bei längerer Nutzung. Die dunkle Farbgebung unterstreicht die Eleganz des Designs und lässt die Inhalte besonders gut zur Geltung kommen.
 
 ## Ordnerstruktur
 
