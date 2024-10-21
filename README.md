@@ -86,7 +86,3 @@ Brandberry
 |   README.md
 |   tsconfig.json
 ```
-
-## Potenzielle Server-Struktur auf AWS
-
-<img src="./assets/server-structure.png">
