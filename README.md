@@ -66,7 +66,7 @@ Bei der Umsetzung von Brandberry ist zu beachten, dass es drei Teilbereiche gibt
 Hier ist zu erwähnen, dass der Worklfow, den wir oben erklärt haben, bei der Planung zum tragen kam, bzw. überhaupt erst durch den Entstehungsprozess von Brandberry entstanden ist.
 Wichtig ist, dass während der Team-Meetings schnell Entscheidungen getroffen werden und die Umsetzung daraufhin so schnell wie möglich stattfindet. Das ermöglicht uns auch hier eine schnelle Validierung der Anforderungen und ob wir auf dem richtigen Weg sind oder Anpassungen vornehmen müssen.
 
-Verwendete Tools:
+#### Verwendete Tools:
 
 - [Figma](https://www.figma.com/)
 - [Miro](https://miro.com/)
@@ -146,3 +146,16 @@ Next-Auth ermöglicht uns die nahtlose Authentifizierung unserer Nutzer. Währen
 Für die Authentifizierungsstrategie haben wir uns für JWT entschieden, um die Datenbank zu entlasten. Nutzer- und Sitzungsdaten werden in einem Token gespeichert, der in einem Cookie abgelegt wird. Dies erlaubt es uns, dynamische Routen zu reduzieren, die Routenabstraktion zu vereinfachen und sensible Nutzerdaten aus den URLs fernzuhalten.
 
 Zod ist ein Tool zur Schema-Validierung, das uns dabei hilft, die über Formulare erhaltenen Daten zu überprüfen. Wenn die Daten nicht den in Zod definierten Anforderungen entsprechen, wird ein Fehler generiert, der dynamisch auf der Client-Seite angezeigt werden kann.
+
+#### Zusätzliche Technologien
+
+Über die erwähnten Technologien hinaus, verwenden wir auch noch Tools, die unsere Pipeline abbilden - dazu gehören:
+
+- Github Actions
+- Terraform
+- Ansible
+- Docker
+
+Grundsätzlich verwenden wir Github Actions als CI/CD-Tool, um unsere Pipeline auszuführen. Innerhalb unseres Github Workflows verwenden wir Terraform als Provisionierungstool, greifen über einen externen Speicher auf die .tfstate zu, erstellen mit Hilfe von den jeweiligen Outputs eine inventory.ini für Ansible, bauen dann einen Container aus der Applikation, pushen ihn in eine Regsitry und konfigurieren die erstellten Instanzen mit Ansible.
+
+Grundsätzlich verwenden wir GitHub Actions als CI/CD-Tool, um unsere Pipeline auszuführen. Innerhalb unseres GitHub-Workflows nutzen wir Terraform als Provisionierungstool und greifen über einen externen Speicher auf die `.tfstate`-Datei zu. Mithilfe der jeweiligen Outputs erstellen wir eine `inventory.ini` für Ansible, bauen dann einen Container aus der Applikation, pushen ihn in eine Registry und konfigurieren die erstellten Instanzen mit Ansible, wobei hier die gebauten Container genutzt werden und auf den Instanzen gestartet werden. 
