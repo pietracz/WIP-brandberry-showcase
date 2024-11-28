@@ -1,35 +1,86 @@
-# Brandberry Showcase
+# Brandberry
 
-Brandberry ist ein fiktives Startup, welches Unternehmen maßgeschneiderte Webdesign-Lösungen bietet.
-Clienten werden ab der ersten Idee bis zur fertigen Website begleitet. Der Workflow beinhaltet einen agilen Ansatz und einen transparenten Projektverlauf, welcher eine effiziente Zusammenarbeit garantiert.
-Darüber hinaus ist der Workflow so konzipiert, dass das erste Ergebnis - abhängig vom Umfang der Anfrage - nach 48 Stunden ausgeliefert wird.
+Brandberry ist eine Agentur, die sich auf die Entwicklung und dem Design von Webanwendungen spezialisiert hat. Clienten werden von der ersten Idee bis zur fertigen Lösung begleitet. Bei unserer Arbeit achten wir darauf, dass der Client so schnell wie möglich launchen kann - dies erreichen wir durch einen ausgeklügelten Workflow, bei dem wir auf Effizienz und Qualität achten.
 
-Diese Website und künftige Anfragen werden unter Verwendung folgender Technologien erstellt:
+### Was macht den Workflow so Effizient?
 
-Frontend:
+#### Kommunikation
 
-- React(Next.js+TypeScript)
-- CSS Modules (Next.js Feature)
-- Lenis
+Der Workflow ist so konzipiert, dass wir auf Overengineering verzichten - nach dem Motto "Simple is best". Der Client hat die Möglichkeit, sobald seine Zahlung hinterlegt ist, auf ein Ticket-System zuzugreifen. In diesem System hat er die Möglichkeit, seine Anforderungen an sein Projekt zu beschreiben. 
+Anschließend taucht dieses Ticket im Admin-Dashboard auf und wird von uns bearbeitet. 
 
-Backend:
+Mit dem Ticket-System wollen wir die Kommunikation zwischen uns und dem Client auf das notwendigste reduzieren. Meetings erfordern in erster Linie einen Zeitaufwand, durch das Ticket-System schmälern wir diesen Zeitaufwand, sodass wir und der Client sich auf das Wesentliche konzentrieren können - die Arbeit. 
 
-- Node.js(Express, mysql2)
-- MySQL
+Side-Note: Das soll natürlich nicht heißen, dass wir kein initiales Meeting wollen. Am Ende vertraut uns der Kunde sein Geld und zukünftigen Webauftritt an. Natürlich werden wir, wenn der Wunsch besteht, ein Initial-Meeting organisieren, um Anforderungen zu diskutieren und zu klären. 
 
-## Projekt-Erläuterung
+#### Design- und Code-Bibliotheken
 
-Die Website ist ein Multipager, dessen Design und Planung in Figma und Miro erfolgt ist. Auf Code-Ebene haben wir uns im Frontend für Next.js mit TypeScript entschieden, im Backend für Node.js und MySQL.
+Wir haben uns zur Aufgabe gemacht, ein Design- und Code-Bibliotheken-System zu entwickeln. Dazu gehört natürlich, dass wir uns Inspiration suchen - die finden wir auf z.B.: 
 
-Das Design ist weiterhin ein fließender Prozess und spielt bei der Vermarktung des Produktes - der Dienstleistung - eine tragende Rolle. Es wird darauf geachtet, dass sich das Design an verschiedene Bildschirmgrößen anpasst und somit auf allen Geräten ein optimales Erlebnis bietet. Wir haben uns bei der Gestaltung besonders auf die Usability fokussiert, um eine optimale Nutzererfahrung zu gewährleisten. Das Design ist nicht nur schön, sondern auch funktional und unterstützt den Nutzer bei jeder Interaktion.
+- [Dribbble](https://dribbble.com/)
+- [Behance](https://www.behance.net/)
+- [Mobbin](https://www.pinterest.com/)
+- [Awwwards](https://www.awwwards.com/)
 
-Grundsätzlich ist das Styling über viele Wege möglich, wir wollen mit unserem Ansatz "Atomic Design" und "Clean Code" folgen.
-Aus diesem Grund definieren wir lediglich Variablen über eine globals.css und erstellen den Rest des Stylings in einem, zur Komponente, dazugehörigen Modul.
+In unserer Design- und Code-Bibliothek befinden sich sauber ausgearbeitete Komponenten und Sektionen, die wiederverwendet werden können, um somit, schnell und effizient, eine qualitativ hochwertige Anwendung zu entwickeln.
 
-Im Backend verfolgen wir einen ähnlichen Ansatz. Next.js macht es grundsätzlich möglich, dass API-Calls über die Anwendung selber gemacht werden können, was aber die Skalierbarkeit erschwert.
-Darum setzen wir hier auf die Modularisierung, trennen das Frontend vom Backend, wodurch die REST-API über eine Node.js Instanz stattfindet und Anfragen von der Next.js App an die MySQL-Datenbank weiterleitet und verarbeitet.
+Diese Bibliotheken werden über die Zeit wachsen und werden mehr Vielfalt und Kombinationsmöglichkeiten bieten.
 
-## Design
+#### Geschwindigkeit
+
+Durch die oben genannten Herangehensweisen haben wir die Möglichkeit, schneller in die Feedback-Schleife zu gelangen, dadurch kann der Client schneller Ergebnisse sehen und wir können besser und schneller auf die Wünsche eingehen.
+
+Außerdem beinhaltet der Worklflow Automatismen, die es uns ermöglicht, schell und einfach Schritte auszuführen, die sich von Projekt zu Projekt wiederholen - dazu gehören Schritte wie: 
+
+- Projekt erstellen
+- Abhängigkeiten installieren oder aktualisieren
+- Infrastruktur einrichten
+- Anwendung deployen
+
+Der Automatismus wird derzeit durch ein Python-Script realisiert. Dieses Script erstellt eine grundlegende Projektstruktur, füllt Vorlagen mit dynamisch angegebenen Werten und integriert diese in das Projekt. Danach wird das Projekt-Repository auf GitHub erstellt und mit dem Projekt auf dem Hostsystem synchronisiert. Anschließend wird das Projekt mittels eines Workflows gepusht, was das Deployment über Terraform und Ansible initiiert.
+
+### Warum Code und nicht No-Code?
+
+#### Flexibilität
+
+Dadurch, dass die Code-Basis in unserer Hand liegt, ist es uns möglich maßgeschneiderte Lösungen zu entwickeln, sollten unsere Bibliotheken mal ein Szenario nicht abdecken. Außerdem, sollte der Client nur kleine Änderungen an der Anwendung vornehmen wollen, ist es einfach diese anzupassen.
+
+#### Skalierbarkeit 
+
+Anwendungen können durch die Verwendung von CICD-Pipelines einfach skalierbar gemacht werden. Sollte sich auch hier Anforderungen ändern, sind diese genauso flexibel anzupassen.
+
+#### Performance 
+
+Die richtige Auswahl an Technologien kann dazu führen, dass eine Anwendung sehr performant ist. Ein Zuwachs in der Performanz kann unter anderem dadurch erzeugt werden, dass die Anwendung größtenteils serverseitig zur Verfügung gestellt wird und nur die Anwendungslogik, die die Interaktion mit dem Benutzer erfordert, auf Seiten des Client ausgeführt wird.
+
+## Umsetzung
+
+Bei der Umsetzung von Brandberry ist zu beachten, dass es drei Teilbereiche gibt:
+
+- Planung
+- Design
+- Entwicklung
+
+### Planung
+
+Hier ist zu erwähnen, dass der Worklfow, den wir oben erklärt haben, bei der Planung zum tragen kam, bzw. überhaupt erst durch den Entstehungsprozess von Brandberry entstanden ist.
+Wichtig ist, dass während der Team-Meetings schnell Entscheidungen getroffen werden und die Umsetzung daraufhin so schnell wie möglich stattfindet. Das ermöglicht uns auch hier eine schnelle Validierung der Anforderungen und ob wir auf dem richtigen Weg sind oder Anpassungen vornehmen müssen.
+
+Verwendete Tools:
+
+- [Figma](https://www.figma.com/)
+- [Miro](https://miro.com/)
+- [Google Chat](https://chat.google.com/)
+- [Google Kalender](https://calendar.google.com/)
+- [Google Meet](https://meet.google.com/)
+
+### Design
+
+Das Design spielt bei jedem Produkt eine tragende Rolle. Die Wahl der richtigen Farben, Schriftarten, Abstände und Anordnungen sind dafür zuständig, dass der Benutzer sich intuitiv durch die Anwendung bewegen kann und das Erlebnis so gut wie möglich optimiert ist.
+
+In der Regel wird ein Design durch eine primäre, eine sekundäre, eine helle und dunkle Farbe, die dazugehörigen Kontraste, ein bis zwei Schriftarten, Größen und Abstände definiert.
+
+#### Erläuterung:
 
 Das Layout der Website ist bewusst minimalistisch gehalten, um die Aufmerksamkeit auf die Inhalte zu lenken. Durch eine klare Struktur und eine intuitive Navigation wird ein angenehmes Benutzererlebnis gewährleistet. Die Anordnung der Elemente ist sorgfältig durchdacht und sorgt für einen harmonischen Gesamteindruck.
 
@@ -39,50 +90,59 @@ Die Farbpalette der Website ist geprägt von den kräftigen Tönen Dark Amourant
 
 Der Dark Mode ist nicht nur ein aktueller Trend, sondern bietet auch praktische Vorteile. Er schont die Augen, reduziert die Belastung durch blaues Licht und schafft eine angenehme Atmosphäre, insbesondere bei längerer Nutzung. Die dunkle Farbgebung unterstreicht die Eleganz des Designs und lässt die Inhalte besonders gut zur Geltung kommen.
 
-## Ordnerstruktur
+#### Verwendete Tools: 
 
-Hierbei handelt es sich um eine vorläufige Ordnerstruktur.
+- [Figma](https://www.figma.com/)
 
-```
-Brandberry
-+---.next
-\---node_modules
-|
-+---public
-\---src
-|    \---app
-|        |   favicon.ico
-|        |   globals.css     /* Hier werden alle Variablen definiert, die später in den Komponenten verwendet werden */
-|        |   layout.tsx     /* Die layout.tsx und die page.tsx dienen lediglich einem redirect, um das Hauptverzeichnis sauber zu halten */
-|        |   page.tsx
-|        |
-|        +---about
-|        |   |   layout.tsx     /* Jede standard Route beinhaltet eine layout.tsx, um die parallelen Routen einzureihen*/
-|        |   |
-|        |   +---@hero
-|        |   |       page.tsx     /* Jede parallele Route beinhaltet eine page.tsx */
-|        |   |
-|        |   |
-|        |   +---@skills
-|        |   |
-|        |   +---@statement
-|        |   |
-|        |   \---@team
-|        |
-|        +---home
-|        |
-|        +---services
-|        |
-|        +---_components     /* Hier werden alle Komponenten definiert */
-|        |
-|        \---_lib     /* Dieser Ordner beinhaltet Skripte, um z.B. styled-components nutzbar zu machen */
-|
-|   .eslintrc.json
-|   .gitignore
-|   next-env.d.ts
-|   next.config.mjs
-|   package-lock.json
-|   package.json
-|   README.md
-|   tsconfig.json
-```
+### Entwicklung
+
+Die Entwicklung ist am Ende der Kleber, der die Planung und das Design verbindet, um ein qualtitativ hochwertiges und interaktives Produkt zu erzeugen. 
+Durch das Verwenden der richtigen Technologien und Techniken entstehen hier die Vorteile, die wir oben erläutert haben:
+
+- Skalierbarkeit
+- Flexibilität
+- Performanz
+
+#### Verwendete Technologien:
+
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Prisma](https://www.prisma.io/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Next-Auth](https://next-auth.js.org/)
+- [Zod](https://zod.dev/)
+
+#### Warum Next.js?
+
+Next.js bietet uns viele Vorteile, der wichtigste ist das Server-Side-Rendering (SSR). Dadurch können performante Anwendungen mit geringen Ladezeiten entwickelt werden. Durch das SSR ergibt sich auch ein weiterer Vorteil: Die Anwendung wird, bevor sie von einem Clienten angefordert wird, zur Verfügung gestellt und kann somit von Search-Engine-Crawler erreicht werden. Das bedeutet, dass wir einen größeren Hebel haben, wenn es um SEO-Optimierung geht.
+
+Darüber hinaus ist die Bereitstellung auf der Server-Side eine gute Sicherheitsmaßnahme. Eine Anwendung erfordert grundsätzlich auch die Interaktion des Client, diese Interaktion wird auf der Client-Side durchgeführt, kann aber an Server-Actions gebunden sein und vermeidet somit, dass sensible Informationen an den Client geschickt werden.
+
+#### Warum TypeScript?
+
+Grundlegend lässt sich sagen, dass TypeScript eine gute Wahl ist, wenn eine Anwendung entwickelt werden soll, die aus robusten und sicheren Code besteht. 
+Die Typensicherheit ermöglicht uns schneller Fehler zu erkennen und verbessert somit die Qualität der Anwendung.
+
+#### Warum Prisma?
+
+Prisma ist ein ORM (Object-Relational-Mapping) Tool, das uns dabei hilft, mit unserer Datenbank zu kommunizieren.
+Der Hauptgrund, warum wir Prisma verwenden, ist, dass uns hier eine Typensicherheit geboten wird und wie in TypeScript erwähnt, es die Qulität der Anwendung verbessert.
+
+Außerdem können wir Prisma innerhalb von Server-Komponenten verwenden und vermeiden somit die Verwendung von einem Hook, was wiederum dazu führen würde, dass eine Komponente auf der Client-Side gerendert werden muss. Das könnte u.a. mit Entrypoint-Dateien gelöst werden, würde aber an manchen Stellen die Komplexität der Anwendung erhöhen.
+
+Hierbei ist aber auch wichtig zu erwähnen, dass sich ein Nachteil abbildet:
+Sollten Anfragen an die Datenbank eine sehr komplexe Logik haben, kann es zu einer geringeren Performance kommen.
+
+#### Warum PostgreSQL?
+
+Wir haben uns für PostgreSQL entschieden, weil es die umfangreichste Unterstützung für die Funktionen bietet, die wir mit Prisma nutzen möchten. PostgreSQL ist nicht nur kostenfrei, sondern kann auch in Containern gehostet werden, was die Skalierbarkeit unseres Backends erleichtert.
+
+Zusätzlich haben wir uns für einen PaaS-Anbieter entschieden, der sowohl Next.js als auch PostgreSQL unterstützt, nämlich Vercel. Dies ermöglicht es uns, die Entwicklung zu beschleunigen, indem wir uns auf den Code konzentrieren können, ohne eine eigene Infrastruktur aufbauen zu müssen oder uns um eine zusätzliche Pipeline-Logik kümmern zu müssen.
+
+#### Warum Next-Auth und Zod?
+
+Next-Auth ermöglicht uns die nahtlose Authentifizierung unserer Nutzer. Während wir uns in die Authentifizierungslogik eingearbeitet haben, wurde klar, dass wir sowohl Credentials als auch OAuth verwenden können – in unserem Fall nutzen wir Google und Credentials.
+
+Für die Authentifizierungsstrategie haben wir uns für JWT entschieden, um die Datenbank zu entlasten. Nutzer- und Sitzungsdaten werden in einem Token gespeichert, der in einem Cookie abgelegt wird. Dies erlaubt es uns, dynamische Routen zu reduzieren, die Routenabstraktion zu vereinfachen und sensible Nutzerdaten aus den URLs fernzuhalten.
+
+Zod ist ein Tool zur Schema-Validierung, das uns dabei hilft, die über Formulare erhaltenen Daten zu überprüfen. Wenn die Daten nicht den in Zod definierten Anforderungen entsprechen, wird ein Fehler generiert, der dynamisch auf der Client-Seite angezeigt werden kann.
